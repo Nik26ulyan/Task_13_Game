@@ -34,7 +34,7 @@ public class Game {
     }
 
     private static final int TIME_FOR_ONE_BOX = 20;
-    private Timer gameTimer = new Timer(1000, e -> {
+    private final Timer gameTimer = new Timer(1000, e -> {
         this.timeLeft--;
     });
     private SocobanCell[][] field = null;

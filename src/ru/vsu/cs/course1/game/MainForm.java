@@ -27,7 +27,7 @@ public class MainForm extends JFrame {
     private Game game = new Game();
     private ParamsDialog dialogParams;
 
-    private Timer timer = new Timer(1000, e -> {
+    private final Timer timer = new Timer(1000, e -> {
         if (game.getTimeLeft() > -1) {
             labelTime.setText("Осталось времени: " + game.getTimeLeft());
         } else {
