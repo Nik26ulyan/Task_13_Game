@@ -31,7 +31,7 @@ public class MainForm extends JFrame {
         if (game.getTimeLeft() > -1) {
             labelTime.setText("Осталось времени: " + game.getTimeLeft());
         } else {
-            game.movePlayer(0, 0);
+            game.calculateGameState();
         }
         updateView();
     });

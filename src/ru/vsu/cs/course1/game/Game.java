@@ -133,7 +133,7 @@ public class Game {
         this.playerCol += colMove;
     }
 
-    private void calculateGameState() {
+    public void calculateGameState() {
         if (this.wrongBoxCount == 0) {
             state = GameState.WIN;
         } else if (timeLeft <= 0) {
