@@ -141,7 +141,7 @@ public class MainForm extends JFrame {
         JMenu menuHelp = new JMenu("Справка");
         menuBarMain.add(menuHelp);
         menuHelp.add(createMenuItem("Правила", "ctrl+R", null, e -> {
-            SwingUtils.showInfoMessageBox("Сокобан - это игра,в которой игроку необходимо расставить ящики по обозначенным местам лабиринта. " +
+            SwingUtils.showInfoMessageBox("СокоБАН - это игра,в которой игроку необходимо расставить ящики по обозначенным местам лабиринта. " +
                     "\nКладовщик одновременно может двигать только один ящик, толкая вперёд.",
                     "Правила");
         }));
