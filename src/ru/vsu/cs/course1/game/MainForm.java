@@ -132,7 +132,7 @@ public class MainForm extends JFrame {
 
         JMenu menuView = new JMenu("Вид");
         menuBarMain.add(menuView);
-        menuView.add(createMenuItem("Подогнать размер окна", null, null, e -> {
+        menuView.add(createMenuItem("Изменить размер окна", null, null, e -> {
             updateWindowSize();
         }));
         menuView.addSeparator();
@@ -148,7 +148,7 @@ public class MainForm extends JFrame {
         menuHelp.add(createMenuItem("О программе", "ctrl+A", null, e -> {
             SwingUtils.showInfoMessageBox(
                     "Игра Сокобан на ЯП Java" +
-                            "\n\nАвтор: Ульянов Н. С." +
+                            "\n\nАвторы: Ульянов Н. С. Васильев Г.А." +
                             "\n\nПри написании игры был использован шаблон." +
                             "\nАвтор шаблона: Соломатин Д. И.",
                     "О программе"
